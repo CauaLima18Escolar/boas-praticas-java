@@ -1,12 +1,17 @@
 package br.com.alura.domain;
 
 public class Pet {
+    private Long id;
     private String tipo;
     private String nome;
     private int idade;
     private double peso;
     private String raca;
     private String cor;
+
+    public Pet() {
+
+    }
 
     public Pet(String tipo, String nome, int idade, double peso, String raca, String cor) {
         this.tipo = tipo;
@@ -15,6 +20,14 @@ public class Pet {
         this.peso = peso;
         this.raca = raca;
         this.cor = cor;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getTipo() {
